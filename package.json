@@ -1,0 +1,16 @@
+{
+  "name": "etsy-panel",
+  "version": "0.2.0",
+  "description": "Etsy muhasebe ve sipariş paneli",
+  "author": "Etsy Panel",
+  "main": "main.js",
+  "scripts": { "start": "electron ." },
+  "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "com.etsypanel.app",
+    "productName": "Etsy Panel",
+    "files": ["main.js", "index.html", "style.css", "sample-data.js", "calc.js", "app.js"],
+    "mac": { "target": "dmg" },
+    "win": { "target": "nsis" }
+  }
+}
